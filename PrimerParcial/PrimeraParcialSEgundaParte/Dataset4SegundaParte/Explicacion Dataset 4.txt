@@ -1,0 +1,9 @@
+Para predecir el alquiler de bicicletas primero dividi los datos limpios en 75% para entrenar y 25% para testear. Luego los normalic, un paso obligatorio para que el Descenso de Gradiente funcione bien.
+Aplique tres modelos:
+1.Regresión Lineal: Para buscar una tendencia recta.
+2.Regresión Polinómica (grado 2): Para adaptarme mejor a las curvas.
+3.Ecuación Normal: Para tener el resultado matemático
+Gráficas: Ambas gráficas muestran cómo el error cae y se estabiliza rápidamente durante las iteraciones. La gráfica azul es del modelo lineal y la roja del polinómico. Esto demuestra que los algoritmos aprendieron bien y que el tamaño de paso que configuré (0.01) es.
+Para terminar, pongo a competir a los modelos usando el 25% de datos que oculté, midiendo su margen de error y su precisión para ver cuál resultó ser el mejor en la vida real.
+Al evaluar con el 25% de datos ocultos, notamos una precision del 36%. es un resultado realista para este dataset. Esto pasa porque el alquiler de bicis depende de factores humanos muy variables como el clima exacto, dias feriados o la hora, que una simple linea recta o una curva de grado 2 no pueden capturar por completo.
+ Aun asi, el hecho de que mi Gradiente y la Ecuacion Normal den casi el mismo resultado confirma que mi implementacion matematica es buena
